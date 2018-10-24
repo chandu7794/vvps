@@ -1,0 +1,181 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+.home-wrapper{
+
+}
+.main-body{
+    margin-top: 50px;
+}
+.header{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    background: #333232;
+    width: 100%;
+    z-index: 10;
+}
+.header ul{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 0px;
+}
+.header ul li{
+    display: inline-block;
+    padding-right: 20px;
+}
+.header ul li a{
+    color: #fff;
+}
+#home-wrapper{
+    min-height: 500px;
+}
+#servicing-wrapper{
+    background: #151515;
+    min-height: 500px;
+    color: #fff;
+}
+.services,.work,.contactus,.aboutus{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 0px;
+}
+.services h3 span{
+    border-bottom: 1px solid #fff;
+}
+.services h3:after{
+    /*content: '';*/
+    /*display: inline-block;*/
+    /*height: 2px;*/
+    /*width: 20px;*/
+    /*background: #fff;*/
+    /*position: absolute;*/
+    /*bottom: -5px;*/
+    /*left: 49%;*/
+}
+.services .content{
+    margin: 50px 0px;
+}
+.services .content h5{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.services .content p{
+    font-size: 16px;
+}
+.services .content i{
+    height: 50px;
+    width: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: relative;
+}
+.services .content i::before{
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    font-size: 22px;
+}
+#work-wrapper{
+    min-height: 500px;
+}
+.work h3 span, .aboutus h3 span,.contactus h3 span{
+    border-bottom: 1px solid #151515;
+}
+#aboutus-wrapper{
+    min-height: 500px;
+    background: #151515;
+}
+.aboutus .aboutus-wrapper{
+    margin: 100px 0;
+    padding: 50px 20px;
+    background: #fff;
+}
+#contactus-wrapper{
+    min-height: 500px;
+    background: #555555;
+}
+.contactus .contactus-wrapper{
+    margin: 100px 0;
+    padding: 50px 20px;
+    background: #fff;
+}
+.contact-us-content{
+    text-align: left;
+    width: 75%;
+    margin: 0 auto;
+}
+.contact-us-content .address{
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.contact-us-content p span{
+    display: inline-block;
+    padding-right: 20px;
+    min-width: 120px;
+}
+#footer-wrapper{
+    background: #333;
+}
+.footer{
+    color: #fff;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+.footer p{
+    margin: 10px 0 0 0;
+}
+.footer i::before{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 5px 7px;
+    background: #fff;
+    color: #333;
+    margin-right: 5px;
+}
+
+.panel-default {
+    border-color: #ddd;
+}
+
+.login .panel-body {
+    padding-bottom: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+#login_form .job-btn {
+    position: relative;
+}
+
+.popup_login {
+    display: none;
+}
+
+.loading {
+    display: none;
+}
+
+.alert-danger {
+    display: none;
+}

@@ -1,0 +1,27 @@
+development:
+  adapter: postgresql
+  encoding: utf-8
+  database: school_web
+  host: localhost #192.168.217.120
+  username: mouli #postgres
+  password: kreatio #postgres
+  port: 5432
+
+production:
+  adapter: postgresql
+  encoding: utf-8
+  database: school_web
+  host: localhost #192.168.217.120
+  username: mouli #postgres
+  password: kreatio #postgres
+  port: 5432
+
+test:
+  adapter: postgresql
+  encoding: utf-8
+  database: school_web
+  host: localhost #192.168.217.120
+  username: mouli #postgres
+  password: kreatio #postgres
+  port: 5432
+

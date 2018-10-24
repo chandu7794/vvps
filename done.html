@@ -1,0 +1,124 @@
+<div class="hover-image">
+    <div class="module-inner">
+        <div class="module-image">
+            <img alt="Image Alt" src="http://polytechnic.themeisland.net/wp-content/uploads/sites/10/2014/01/smiling_brunette.jpg">
+        </div>
+
+        <div class="module-content">
+            <div class="content-inner">
+                <h4>Heading Here</h4>
+                <p>Ur Content here</p>
+                <p>
+                    <a title="Quick Look at Visual Composer" href="javascript:void(0)">
+                        <strong>If any Links are there!</strong>
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="module-background">
+        </div>
+    </div>
+</div>
+<div class="google-map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3813.0763924111557!2d81.28765131487253!3d17.117772588240708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a36f6317af42a33%3A0x5ca935c50ef6ea80!2sVidya+Vikas!5e0!3m2!1sen!2sin!4v1527738756855" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<style>
+    .google-map-container{
+        float: right;
+
+    }
+    .hover-image{
+        display: inline-block;
+    }
+    .hover-image .module-inner {
+        overflow: hidden !important;
+        position: relative;
+        display: inline-block;
+    }
+
+    .hover-image .module-content {
+        backface-visibility: hidden;
+        left: 0;
+        opacity: 1;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        z-index: 999;
+        transition: all 1s ease;
+        text-align: left;
+    }
+
+    .module-content {
+        background: transparent;
+        height: 40px;
+    }
+    .module-content p{
+        color: #ffffff;
+        padding-left: 10px;
+    }
+
+    .content-inner>h4 {
+        color: #ffffff;
+        font-size: 1.6rem;
+        font-weight: 300;
+        letter-spacing: 0;
+        line-height: 1.4rem;
+        margin: 0.2rem 0 1.4rem;
+        padding-left: 10px;
+        text-transform: capitalize;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        margin-bottom: 1rem;
+    }
+
+    @media only screen and (min-width: 1250px){
+        #page .hover-image .content-inner h4 {
+            font-size: 1.6rem;
+        }
+    }
+
+    .hover-image .module-background {
+        backface-visibility: hidden;
+        height: 0%;
+        left: 0;
+        opacity: 1;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        z-index: 2;
+        transition: all 1s ease;
+        background-color:#144563;
+        opacity:0.9;
+
+    }
+
+
+    html:not(.no-csstransitions) .hover-image .module-inner .module-content,
+    html:not(.no-csstransitions) .hover-image .module-inner .module-background {
+        height: 40px;
+    }
+
+    html:not(.no-csstransitions) .hover-image .module-inner:hover .module-content,
+    html:not(.no-csstransitions) .hover-image .module-inner:hover .module-background {
+        height: 100%;
+    }
+
+    /* #Tablet (Portrait) */
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+        html:not(.no-csstransitions) .hover-image .module-inner .module-content,
+        html:not(.no-csstransitions) .hover-image .module-inner .module-background {
+            height: 25px;
+        }
+        html:not(.no-csstransitions) .hover-image .module-inner:hover .module-content,
+        html:not(.no-csstransitions) .hover-image .module-inner:hover .module-background {
+            height: 100%;
+        }
+    }
+</style>

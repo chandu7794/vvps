@@ -519,7 +519,9 @@
       <div class="work">
         <h3><span>OUR WORK</span></h3>
         <div class="image-holder">
-
+          <% Image.all.order("created_at desc").limit(6).each do |image| %>
+          <%= image_tag image.avatar.url(:medium) %>
+            <% end  %>
         </div>
       </div>
     </div>

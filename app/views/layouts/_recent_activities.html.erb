@@ -1,1 +1,15 @@
-<h1>This is a test partial</h1>
+<h1>Upload Images for Our Work Here.</h1>
+
+<%= form_for Image.new, url: images_path, html: { multipart: true } do |form| %>
+  <%= form.file_field :avatar %>
+  <%= form.submit %>
+<% end %>
+
+
+<h2>List of all Uploaded Images</h2>
+
+<% Image.all.order("created_at desc").each do |image| %>
+  <p class="image-filename"><%= image.avatar_file_name %></p>
+  <p> <%= image_tag image.avatar.url(:thumb) %></p>
+  <a href="images/delete/<%= image.id %>">delete<i class="fa fa-trash-o" aria-hidden="true"></i></a>
+<% end %>

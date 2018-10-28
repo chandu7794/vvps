@@ -179,3 +179,8 @@
 .alert-danger {
     display: none;
 }
+
+.delete-icon {
+    display: block;
+    width: 100%;
+}
